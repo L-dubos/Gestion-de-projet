@@ -8,13 +8,13 @@ public class Player : MonoBehaviour
     public float hitForce = 10f; // Force pour frapper la balle
     private Rigidbody ballRb;
 
-    public Transform cameraTransform; // La caméra qui suit le joueur
+    public Transform cameraTransform; // La camï¿½ra qui suit le joueur
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
 
-        GameObject ball = GameObject.Find("GolfBall"); // Assure-toi que la sphère s'appelle "GolfBall"
+        GameObject ball = GameObject.Find("GolfBall"); // Assure-toi que la sphï¿½re s'appelle "GolfBall"
         if (ball != null)
         {
             ballRb = ball.GetComponent<Rigidbody>();
@@ -36,16 +36,16 @@ public class Player : MonoBehaviour
 
     void MovePlayer()
     {
-        // Récupérer les entrées de mouvement (ZQSD)
+        // Rï¿½cupï¿½rer les entrï¿½es de mouvement (ZQSD)
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        // Calculer la direction du mouvement relative à la caméra
+        // Calculer la direction du mouvement relative ï¿½ la camï¿½ra
         Vector3 moveDirection = cameraTransform.forward * verticalInput + cameraTransform.right * horizontalInput;
         moveDirection.y = 0f; // On ignore la composante Y pour ne pas affecter la hauteur du joueur
 
         // Appliquer le mouvement au joueur
-        rb.velocity = new Vector3(moveDirection.x * moveSpeed, rb.velocity.y, moveDirection.z * moveSpeed);
+        rb.linearVelocity = new Vector3(moveDirection.x * moveSpeed, rb.linearVelocity.y, moveDirection.z * moveSpeed);
     }
 
     void Jump()

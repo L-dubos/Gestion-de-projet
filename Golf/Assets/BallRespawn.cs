@@ -1,8 +1,10 @@
 using UnityEngine;
 
+
+
 public class BallRespawn : MonoBehaviour
 {
-    public Transform respawnPoint; // Référence au point de respawn
+    public Transform respawnPoint; // Rï¿½fï¿½rence au point de respawn
 
     void OnTriggerEnter(Collider other)
     {
@@ -15,7 +17,7 @@ public class BallRespawn : MonoBehaviour
     void Respawn()
     {
         transform.position = respawnPoint.position;
-        GetComponent<Rigidbody>().velocity = Vector3.zero; // Réinitialise la vitesse
-        GetComponent<Rigidbody>().angularVelocity = Vector3.zero; // Réinitialise la rotation
+        GetComponent<Rigidbody>().linearVelocity = Vector3.zero; // Rï¿½initialise la vitesse
+        GetComponent<Rigidbody>().angularVelocity = Vector3.zero; // Rï¿½initialise la rotation
     }
 }
