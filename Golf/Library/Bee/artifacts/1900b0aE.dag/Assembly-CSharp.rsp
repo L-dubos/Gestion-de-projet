@@ -403,6 +403,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.36f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/BallRespawn.cs"
 "Assets/CameraFollow.cs"
+"Assets/HoleSys.cs"
 "Assets/ignore colide.cs"
 "Assets/PlateformMouv.cs"
 "Assets/PlateformTrigger.cs"

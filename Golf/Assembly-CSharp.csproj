@@ -61,6 +61,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\HoleSys.cs" />
     <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\PlateformMouv.cs" />
     <Compile Include="Assets\rota.cs" />

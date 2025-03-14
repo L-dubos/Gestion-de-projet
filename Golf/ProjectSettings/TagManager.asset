@@ -9,6 +9,7 @@ TagManager:
   - Wballl
   - Wplayer
   - WallBall
+  - obj
   layers:
   - Default
   - TransparentFX
