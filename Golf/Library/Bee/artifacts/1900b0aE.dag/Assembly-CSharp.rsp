@@ -408,6 +408,7 @@
 "Assets/PlateformMouv.cs"
 "Assets/PlateformTrigger.cs"
 "Assets/Player.cs"
+"Assets/presureplqte.cs"
 "Assets/rota.cs"
 -langversion:9.0
 /deterministic

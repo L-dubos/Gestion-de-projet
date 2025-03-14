@@ -67,6 +67,7 @@
     <Compile Include="Assets\rota.cs" />
     <Compile Include="Assets\BallRespawn.cs" />
     <Compile Include="Assets\PlateformTrigger.cs" />
+    <Compile Include="Assets\presureplqte.cs" />
     <Compile Include="Assets\CameraFollow.cs" />
     <Compile Include="Assets\ignore colide.cs" />
   </ItemGroup>
